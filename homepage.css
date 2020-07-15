@@ -1,0 +1,27 @@
+body{
+    margin: 40px 13%;
+    font-family: 'Courier New';
+    font-size: 18px;
+}
+
+.menu{
+    background-color: #f6f6f6;
+    height: 20px;
+    text-align: center;
+    /* set padding to make MenuItem in center in the y direction*/
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+#MenuItem{
+    text-decoration: none;
+    /* float and width are used to set MenuIten in center */
+    width: 20%;
+    float: left;
+    color: steelblue;
+}
+
+#MenuItem:hover{
+    /* use border-bottom to subsititue text-decoration: underline; */
+    border-bottom: 1px solid steelblue;
+}
