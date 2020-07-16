@@ -68,3 +68,15 @@ body{
 strong{
     color: steelblue;
 }
+/* set position and border of footer; with link XiaohanLiu can return to the page top */
+footer{
+  text-align: center;
+  border-top: 1px solid #e7e6e6;
+}
+footer a{
+  color: steelblue;
+  text-decoration: none;
+}
+footer a:hover{
+  border-bottom: 1px solid steelblue;
+}
