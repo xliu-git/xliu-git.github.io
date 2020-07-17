@@ -14,17 +14,19 @@ body{
     margin-bottom: 30px;
 }
 
-#MenuItem{
+/* set all <a> with word (not picture) to the same style*/
+.wordlink {
     text-decoration: none;
+    color: steelblue;
+}
+.wordlink:hover{
+    border-bottom: 1px solid steelblue;
+}
+
+#MenuItem{
     /* float and width are used to set MenuIten in center */
     width: 20%;
     float: left;
-    color: steelblue;
-}
-
-#MenuItem:hover{
-    /* use border-bottom to subsititue text-decoration: underline; */
-    border-bottom: 1px solid steelblue;
 }
 
 .individual{
@@ -46,10 +48,11 @@ body{
     margin-bottom: 0;
 }
 
-#title + p{
-    /* set ideal gap with title */
-    margin-top: 5px;
+#title + div{
+    padding-left: 3px;
+    padding-right: 3px;
 }
+
 
 .elaboration{
     text-align: justify;
@@ -68,15 +71,28 @@ body{
 strong{
     color: steelblue;
 }
+
+/* divide intern info into two parts: company and internInfo */
+#internInfo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: justify;
+}
+
+#projectInfo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: justify;
+}
+
+#projectPic img{
+    width: 260px;
+    height: 190px;
+    border-radius: 10%;
+}
+
 /* set position and border of footer; with link XiaohanLiu can return to the page top */
 footer{
   text-align: center;
   border-top: 1px solid #e7e6e6;
-}
-footer a{
-  color: steelblue;
-  text-decoration: none;
-}
-footer a:hover{
-  border-bottom: 1px solid steelblue;
 }
