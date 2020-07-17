@@ -86,10 +86,11 @@ strong{
 }
 
 #projectPic img{
-    width: 260px;
-    height: 190px;
+    width: 240px;
+    height: 170px;
     border-radius: 10%;
 }
+
 
 /* set position and border of footer; with link XiaohanLiu can return to the page top */
 footer{
