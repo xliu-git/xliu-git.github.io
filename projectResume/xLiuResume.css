@@ -1,5 +1,5 @@
 body{
-    margin: 10px 20px;
+    margin: 20px 5%;
     font-family: 'Courier New';
     font-size: 18px;
     font-weight: 535;
@@ -45,14 +45,10 @@ h4{
     margin: 10px 20px;
 }
 
-.itemTitle{
-    display: inline;
-}
-
-#itemTime{
+#itemRight{
     float: right;
     margin: 0px;
-}
+} 
 
 ul{
     margin: 0px;
