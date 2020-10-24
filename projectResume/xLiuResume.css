@@ -1,8 +1,8 @@
 body{
-    margin: 20px 5%;
-    font-family: 'Courier New';
+    font-family: 'Cambria';
     font-size: 18px;
-    font-weight: 535;
+    font-weight: 400;
+    text-align: justify;
 }
 
 a{
@@ -10,39 +10,54 @@ a{
     color: #6495ed;
 }
 
+ul{
+    margin: 0px;
+}
+
 /* h2: name */
-h2{
-    margin-bottom: 10px;
+.Name{
+    margin-top: 0px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
 /* h3: content title like education, experience, skill, etc */
-h3{
+.ContentTitle{
     border-bottom: 2px solid black;
     margin: 0px;
+    color: #6495ed;
 }
 
 /* h4: item title like syracuse university, beijing pipeling inc, etc */
-h4{
+.DetailTitle{
     margin: 0px;
 }
 
 .Info{
     text-align: center;
+    margin-bottom: 5px;
 }
 
 #infoItem{
     display: inline;
     margin: 0px;
     padding-right: 10px;
-    border-right: 2px solid black;
+    border-right: 1.5px solid black;
 }
 #infoItem:nth-last-child(1){
     border: none;
 }
 
 .Content{
-    margin: 10px 20px;
+    margin: 3px 20px;
+}
+
+.Detail{
+    margin: 1px 3px;
+}
+
+.DetailContent{
+    margin-right: 15px;
 }
 
 #itemRight{
@@ -50,6 +65,4 @@ h4{
     margin: 0px;
 } 
 
-ul{
-    margin: 0px;
-}
+
