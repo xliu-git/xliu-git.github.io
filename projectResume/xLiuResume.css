@@ -1,13 +1,13 @@
 body{
     font-family: 'Cambria';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     text-align: justify;
 }
 
 a{
     text-decoration: none;
-    color: #6495ed;
+    color: #226bd8;
 }
 
 ul{
@@ -16,7 +16,7 @@ ul{
 
 /* h2: name */
 .Name{
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -25,7 +25,7 @@ ul{
 .ContentTitle{
     border-bottom: 2px solid black;
     margin: 0px;
-    color: #6495ed;
+    color: #226bd8;
 }
 
 /* h4: item title like syracuse university, beijing pipeling inc, etc */
@@ -41,7 +41,8 @@ ul{
 #infoItem{
     display: inline;
     margin: 0px;
-    padding-right: 10px;
+    padding-right: 4px;
+    padding-left: 1.3px;
     border-right: 1.5px solid black;
 }
 #infoItem:nth-last-child(1){
