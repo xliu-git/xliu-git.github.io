@@ -42,7 +42,7 @@ body{
 }
 
 #title{
-    /* bio, internhsip, project underline */
+    /* bio, Experiencehsip, project underline */
     border-bottom: 1px solid #e7e6e6;
     /* set ideal gap with next paragragh */
     margin-bottom: 0;
@@ -72,8 +72,8 @@ strong{
     color: steelblue;
 }
 
-/* divide intern info into two parts: company and internInfo */
-#internInfo{
+/* divide Experience info into two parts: company and ExperienceInfo */
+#ExperienceInfo{
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: justify;
