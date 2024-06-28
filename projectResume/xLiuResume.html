@@ -33,34 +33,44 @@
 
             <div class="DetailContent">
                 <ul>
-                    <!-- HCM Channels -->
-                    <li>Constructed the infrastructure of the meeting information channel on the hybrid conference
-                        system by AWS CDK, implemented the meeting information channel, realized the function of ad-hoc
-                        retrieving meeting
-                        information.</li>
-                    <li>Designed the meeting dial channel on the hybrid conference system, implemented the meeting dial
-                        channel, achieved the core function of in room device dialing into
-                        meeting.</li>
-                    <li>Designed the in room interaction channel on the hybrid conference system, implemented the in
-                        room interaction channel, extended the downstream client availablity to the
-                        whole Cisco in room control system.</li>
-                    <li>Corporated with downstream clients on the integration and pilot tests.</li>
-                    <li>Designed the metric collection channel of the hybrid conferenct system, implemented the metric
-                        collection channel, collected the operational metrics like end-to-end latency and business
-                        metrics like weekly sum of meetings dialed by customer, set up the metric dashbaords and
-                        auto-cut ticket alarms.</li>
-                    <li>Improved the client side latency by using async API calls, setting up the provisioned
-                        concurrency for time-sensitive features, optimized the in room dial and the meeting information
-                        retrieval P99 latency to 8 seconds and 5 seconds.</li>
+                    <!-- Hawk MDM -->
+                    <li>
+                        As the tech lead of Amazon Meeting Panel Mobile Device Management (MDM), established acceptance
+                        criteria and tracked entire project process.
+                        Conducted consultations with first-party MDM team, completed
+                        compatibility and regression testing. Applied the corresponding refactor,
+                        crafted comprehensive documentation.
+                        Successfully onboarded over 3000 devices in 6 months, achieving a remarkable reduction in
+                        provision time from 30 minutes per device to 5 minutes per batch,
+                        enhanced operational efficiency.
+                    </li>
+                    <!-- HCM -->
+                    <li>
+                        As the key engineer for the Hybrid Conference Management System (HCMS), actualized the meeting detail ad-hoc retrieval
+                        channel, improving the data consistency of the system.
+                        Designed and implemented the meeting dial channel, empowering in-room devices for
+                        meeting participation. Led the in-room interaction feature, expanding downstream client
+                        availability to entire Cisco in-room control system. Optimized client-side latency
+                        by asynchronous patterns and provisioned concurrency, resulting in 37% reduction
+                        at P99 level.
+                    </li>
                     <!-- HCM Canary -->
-                    <li>Designed the testing system of the hybrid conference system, hold two round design reviews with
-                        the team and the downstream client, set up the scope, business requirements and technical
-                        requirements.</li>
-                    <li>Implemented the integration and canary test cases, set up the test infrastructure in CI/CD
-                        pipeline, helped monitoring the service health in real time.</li>
-                    <li>Designed and implemented the error handling and error notification part of meeting panel Android
-                        app, helped operators to find root cause during the provision process, wrote the SOP and runbook
-                        for operators.</li>
+                    <li>
+                        Devised testing and metric system for the HCMS,
+                        accomplishing integration and real-time canary tests within the CI/CD pipeline.
+                        Delivered insightful metrics to the product team, enabling data-driven decision-making.
+                        Collaborated with downstream clients, ensuring the smooth deployment of system updates.
+                    </li>
+                    <!-- SL -->
+                    <li>
+                        As the key engineer for the Amazon Meeting Panel, proposed and implemented an error handling
+                        fragment on the Android app, enhancing the reliability of the user experience.
+                        Participated in the design and execution of provision workflow, automating
+                        provisioning processes. Conceived and developed provision security canary cases, ensuring the
+                        resilience and robustness of the provisioning process. In collaboration with a UX engineer, took
+                        the lead in the comprehensive redesign and successful launch of the new UI for the Amazon
+                        Meeting Panel, delivering notable improvements in both aesthetics and accessibility.
+                    </li>
                 </ul>
             </div>
 
@@ -76,21 +86,16 @@
 
             <div class="DetailContent">
                 <ul>
-                    <li>Implemented the package including various of authentication and authorization signals classes,
-                        based on the
-                        OAuth 2.0 Framework.</li>
-                    <li>Created the signal handler client interface, constructed SNS client with AWS Credential Provider
-                        to publish signals to
-                        AWS SNS topic.</li>
-                    <li>Designed and applied JUnit4, JUnit5 and Mockito to finish the unit tests and connectivity tests.
+                    <li>
+                        Developed OAuth 2.0 authentication and authorization signals package for security measures.
+                        Established a channel to publish signals with AWS SNS topic.
+                        Implemented test cases to ensure system
+                        reliability. Imported and configured the package into the authentication and authorization
+                        application,
+                        collecting and reporting the signals of post-authentication and pre-authorization stages.
+                        Strengthened risk detection by forwarding signals to the risk detection
+                        platform, contributing to the identification of high-risk actions.
                     </li>
-                    <li>Imported and configured the package into authentication and authorization application, realized
-                        the target of collecting signals after authentication session created.</li>
-                    <li>Integrated signals during post-authentication and pre-authorization, published signals to
-                        specific channel by
-                        initilizing a SNS client.</li>
-                    <li>Sent identity service signals to risk detection platform, further helped detecting high
-                        risk action during authentication and authorization.</li>
                 </ul>
             </div>
 
@@ -106,15 +111,15 @@
 
             <div class="DetailContent">
                 <ul>
-                    <li>Utilized Matrikon OPC simulation server, adjusted related parameters to generate random oilfield
-                        industrial data.</li>
-                    <li>Wrote scripts to test the commercial database APIs, connected simulation server with database,
-                        verified the accuracy during the data transportation.</li>
-                    <li>Realized real-time reading, writing and viewing historical trends functions by the APIs, helped
-                        to optimize automation database management over 600 miles oil and gasline pipeline</li>
-                    <li>Encapsualted the functions into a dependency package, created a client by Matrikon APIs, which
-                        commuicated between
-                        Matrikon OPC and the commercial database.</li>
+                    <li>
+                        Applied the Matrikon OPC simulation server to generate
+                        randomized oilfield industrial data. Scripted tests for commercial database APIs,
+                        establishing a connection between the simulation server and the database to verify data accuracy
+                        during transportation. Encapsulated functionalities into a dependency package, achieved
+                        real-time reading, writing, and viewing of historical trends
+                        through APIs, optimized automation database management for oil
+                        and gas pipeline.
+                    </li>
                 </ul>
             </div>
         </div>
@@ -127,13 +132,13 @@
             <div class="itemTitle">
                 <h4 class="DetailTitle">Programming Language</h4>
                 <ul>
-                    <li>Java, C/C++, Python, HTML/CSS/JavaScript, SQL, Kotlin, Bash</li>
+                    <li>Java, C/C++, Python, HTML/CSS/JavaScript, TypeScript, SQL, Kotlin, Bash</li>
                 </ul>
             </div>
             <div class="itemTitle">
                 <h4 class="DetailTitle">Framework & DevOps Tools</h4>
                 <ul>
-                    <li>AWS, Dagger, NodeJS, Express, JQuery, JUnit5, Mockito, REST, Git</li>
+                    <li>AWS, Android, MDM, IoT, Dagger, NodeJS, React, Express, JQuery, JUnit4, JUnit5, Mockito</li>
                 </ul>
             </div>
 
