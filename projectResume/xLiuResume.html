@@ -9,98 +9,84 @@
 </head>
 
 <body>
-    <h2 class="Name">Xiaohan Liu</h2>
+    <h2 class="Name">刘晓菡</h2>
 
     <div class="Info">
-        <p id="infoItem">(315)420-6733</p>
-        <p id="infoItem"><a href="https://xliu-git.github.io" target="_blank">Profile</a></p>
-        <p id="infoItem"><a href="mailto:xiaohanliu814@gmail.com">xiaohanliu814@gmail.com</a></p>
-        <p id="infoItem"><a href="https://www.linkedin.com/in/xiaohan-liu-281058195/" target="_blank">LinkedIn</a></p>
+        <p id="infoItem">152-2278-1909</p>
+        <p id="infoItem"><a href="mailto:liuxiaohan0522@163.com">liuxiaohan0522@163.com</a></p>
+        <p id="infoItem"><a href="https://xliu-git.github.io" target="_blank">个人主页</a></p>
     </div>
 
     <div class="Content" id="Experience">
-        <h3 class="ContentTitle">Experience</h3>
+        <h3 class="ContentTitle">工作经历</h3>
         <div class="Detail">
             <!-- AWS MeetEx -->
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline"> Amazon Web Services, Inc.</h4>
-                <p style="display:inline" id="itemRight">Seattle, WA 98109</p>
+                <h4 class="DetailTitle" style="display:inline"> 亚马逊云计算服务（Amazon Web Services, Inc.）</h4>
+                <p style="display:inline" id="itemRight">西雅图，美国</p>
             </div>
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Software Development Engineer, Meeting Experience</h4>
-                <p style="display:inline" id="itemRight">10/2021 - Current</p>
+                <h4 class="DetailTitle" style="display:inline">软件开发工程师，Meeting Experience</h4>
+                <p style="display:inline" id="itemRight">10/2021 - 06/2024</p>
             </div>
 
             <div class="DetailContent">
+            <!-- TODO 增加IoT的含量，比如通过某某技术AWS IoT etc -->
+            <!-- ChatGPT 优化 -->
                 <ul>
                     <!-- Hawk MDM -->
                     <li>
-                        As the tech lead of Amazon Meeting Panel Mobile Device Management (MDM), established acceptance
-                        criteria and tracked entire project process.
-                        Conducted consultations with first-party MDM team, completed
-                        compatibility and regression testing. Applied the corresponding refactor,
-                        crafted comprehensive documentation.
-                        Successfully onboarded over 3000 devices in 6 months, achieving a remarkable reduction in
-                        provision time from 30 minutes per device to 5 minutes per batch,
-                        enhanced operational efficiency.
+                        作为亚马逊会议平板移动设备管理（MDM）技术领导，制定验收标准、排期并负责整体项目进度以及落地。与内部移动设备管理平台合作进行调研，独立完成移动设备管理软件在特定应用设备上的可行性测试、回归测试。
+                        进行对应的设备端（Android）以及后端（Java，AWS）代码开发、原有设备管理功能代码的重构以及应用软件安全权限代码的更新，编写相应的设计文档以及运行手册。与预调配合作商进行培训并编写了SOP。
+                        在项目落地后，极大降低了运营成本，将设备预调配时间从每个30分钟降至每批（100个左右）5分钟，半年时间内，实现成功预调配超过3000设备，一年时间内，实现成功预调配超过8000设备。
+                        <!-- TODO 读AWS IoT相关文章尤其是设备预调配、证书相关 -->
+                         <!-- TODO 总结SOP的变迁 -->
+                          <!-- TODO Hawk SDK -->
                     </li>
                     <!-- HCM -->
                     <li>
-                        As the key engineer for the Hybrid Conference Management System (HCMS), actualized the meeting detail ad-hoc retrieval
-                        channel, improving the data consistency of the system.
-                        Designed and implemented the meeting dial channel, empowering in-room devices for
-                        meeting participation. Led the in-room interaction feature, expanding downstream client
-                        availability to entire Cisco in-room control system. Optimized client-side latency
-                        by asynchronous patterns and provisioned concurrency, resulting in 37% reduction
-                        at P99 level.
-                    </li>
-                    <!-- HCM Canary -->
-                    <li>
-                        Devised testing and metric system for the HCMS,
-                        accomplishing integration and real-time canary tests within the CI/CD pipeline.
-                        Delivered insightful metrics to the product team, enabling data-driven decision-making.
-                        Collaborated with downstream clients, ensuring the smooth deployment of system updates.
+                        作为混合会议管理系统项目（HCMS）的主力程序员，实现了即时会议信息通讯频道，增强了系统数据准确性。
+                        设计并实施了实时会议室接入频道，赋能会议室多媒体设备在混合办公中的应用。
+                        <!-- TODO Cisco要体现 -->
+                        通过构建室内设备互动通道，扩大下游客户与室内设备的交互权限，从而实现与整个思科会议室控制系统的交互。
+                        通过异步模式与预置并发优化客户端延迟，在P99层面实现了37%的提升。
+                        <!-- HCM Metric&Canary -->
+                        设计并完成了HCMS服务监控体系，帮助下游客户实现平稳过渡以及版本更新可靠交付，引入实时金丝雀测试进入CI/CD流水线进一步强化系统流水线持续集成交付。
+                        成功交付商业指标系统，帮助产品组进行数据驱动型商业分析决策。
                     </li>
                     <!-- SL -->
                     <li>
-                        As the key engineer for the Amazon Meeting Panel, proposed and implemented an error handling
-                        fragment on the Android app, enhancing the reliability of the user experience.
-                        Participated in the design and execution of provision workflow, automating
-                        provisioning processes. Conceived and developed provision security canary cases, ensuring the
-                        resilience and robustness of the provisioning process. In collaboration with a UX engineer, took
-                        the lead in the comprehensive redesign and successful launch of the new UI for the Amazon
-                        Meeting Panel, delivering notable improvements in both aesthetics and accessibility.
+                        <!-- TODO 前端和new provision分开，分成两个column -->
+                        作为亚马逊会议平板主力工程师，提出并构建了安卓应用的报错模块，加强了用户体验以及可靠性。
+                        参与并设计了设备自动预调配流程，负责开发安全性金丝雀测试，确保了后端鲁棒性和韧性。
+                        与UX合作，领导并实现了亚马逊平板前端设计，以及模块化组件开发，完成了前端可访问性提升。
                     </li>
                 </ul>
             </div>
 
             <!-- Amazon 3P-AuthZ -->
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Amazon.com Services LLC</h4>
-                <p style="display:inline" id="itemRight">Seattle, WA 98109</p>
+                <h4 class="DetailTitle" style="display:inline">亚马逊服务有限公司（Amazon.com Services LLC）</h4>
+                <p style="display:inline" id="itemRight">西雅图，美国</p>
             </div>
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Software Development Engineer, Identity Services</h4>
+                <h4 class="DetailTitle" style="display:inline">软件开发工程师，Identity Services</h4>
                 <p style="display:inline" id="itemRight">06/2021 - 10/2021</p>
             </div>
 
             <div class="DetailContent">
                 <ul>
                     <li>
-                        Developed OAuth 2.0 authentication and authorization signals package for security measures.
-                        Established a channel to publish signals with AWS SNS topic.
-                        Implemented test cases to ensure system
-                        reliability. Imported and configured the package into the authentication and authorization
-                        application,
-                        collecting and reporting the signals of post-authentication and pre-authorization stages.
-                        Strengthened risk detection by forwarding signals to the risk detection
-                        platform, contributing to the identification of high-risk actions.
+                        出于安全考量，开发基于OAuth 2.0验证与授权系统的信号数据类包，通过AWS SNS进行数据传输。
+                        开发测试用例验证系统可靠性。在亚马逊三方登录和授权应用（Login with Amazon）中引用并且配置相应数据信号，收集并反馈给安全后台识别可疑活动，
+                        加强了风险识别和高危行为识别。
                     </li>
                 </ul>
             </div>
 
             <!-- Internship -->
-            <div class="itemTitle">
+            <!-- TODO Remove in the chinese resume if no space, also may be a concern for the background check -->
+            <!-- <div class="itemTitle">
                 <h4 class="DetailTitle" style="display:inline">Beijing PipePlus Technology Co., Ltd.</h4>
                 <p style="display:inline" id="itemRight">Beijing, China 100089</p>
             </div>
@@ -121,13 +107,13 @@
                         and gas pipeline.
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
 
     </div>
 
     <div class="Content" id="Skills">
-        <h3 class="ContentTitle">Skills</h3>
+        <h3 class="ContentTitle">技能</h3>
         <div class="Detail">
             <div class="itemTitle">
                 <h4 class="DetailTitle">Programming Language</h4>
@@ -146,20 +132,21 @@
     </div>
 
     <div class="Content" id="Education">
-        <h3 class="ContentTitle">Education</h3>
+        <h3 class="ContentTitle">教育背景</h3>
         <div class="Detail">
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Syracuse University</h4>
-                <p style="display:inline" id="itemRight">Syracuse, NY 13210</p>
+                <h4 class="DetailTitle" style="display:inline">雪城大学</h4>
+                <p style="display:inline" id="itemRight">雪城，美国</p>
             </div>
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">M.S. Computer Science</h4>
+                <h4 class="DetailTitle" style="display:inline">计算机科学硕士</h4>
                 <p style="display:inline" id="itemRight">08/2019 - 05/2021</p>
             </div>
 
             <div class="DetailContent">
                 <ul>
-                    <li>Courses: NLP, Object Oriented Design, Principles
+                    <!-- TODO 换成中文？ -->
+                    <li>课程: NLP, Object Oriented Design, Principles
                         of Operating Systems, Android Programming, Introduction to Database, Social Media &
                         Data Mining, Design & Analysis of Algorithm</li>
                 </ul>
@@ -168,33 +155,33 @@
 
         <div class="Detail">
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Tianjin University</h4>
-                <p style="display:inline" id="itemRight">Tianjin, China 300350</p>
+                <h4 class="DetailTitle" style="display:inline">天津大学</h4>
+                <p style="display:inline" id="itemRight">天津，中国</p>
             </div>
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">B.S. Applied Chemistry</h4>
+                <h4 class="DetailTitle" style="display:inline">应用化学学士</h4>
                 <p style="display:inline" id="itemRight">09/2015 - 07/2019</p>
             </div>
 
             <div class="DetailContent">
                 <ul>
-                    <li>Coursework: Computation in Pd-Catalyzed Cross-Coupling Reaction</li>
+                    <li>毕业设计：钯催化交叉偶联反应中的势能计算</li>
                 </ul>
             </div>
         </div>
         <div class="Detail">
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Technion - Israel Institute of Technology</h4>
-                <p style="display:inline" id="itemRight">Haifa, Israel 3200003</p>
+                <h4 class="DetailTitle" style="display:inline">以色列理工学院</h4>
+                <p style="display:inline" id="itemRight">海法，以色列</p>
             </div>
             <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Exchange Student</h4>
+                <h4 class="DetailTitle" style="display:inline">交换学生</h4>
                 <p style="display:inline" id="itemRight">08/2018 - 09/2018</p>
             </div>
 
             <div class="DetailContent">
                 <ul>
-                    <li>Course: Introduction to Machine Learning</li>
+                    <li>课程：机器学习导论</li>
                 </ul>
             </div>
         </div>
