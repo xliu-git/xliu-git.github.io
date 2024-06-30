@@ -31,35 +31,35 @@
             </div>
 
             <div class="DetailContent">
-            <!-- TODO 增加IoT的含量，比如通过某某技术AWS IoT etc -->
-            <!-- ChatGPT 优化 -->
                 <ul>
                     <!-- Hawk MDM -->
                     <li>
-                        作为亚马逊会议平板移动设备管理（MDM）技术领导，制定验收标准、排期并负责整体项目进度以及落地。与内部移动设备管理平台合作进行调研，独立完成移动设备管理软件在特定应用设备上的可行性测试、回归测试。
-                        进行对应的设备端（Android）以及后端（Java，AWS）代码开发、原有设备管理功能代码的重构以及应用软件安全权限代码的更新，编写相应的设计文档以及运行手册。与预调配合作商进行培训并编写了SOP。
-                        在项目落地后，极大降低了运营成本，将设备预调配时间从每个30分钟降至每批（100个左右）5分钟，半年时间内，实现成功预调配超过3000设备，一年时间内，实现成功预调配超过8000设备。
+                        作为亚马逊会议平板移动设备管理（MDM）技术领导，制定验收标准、排期并负责整体项目进度以及落地。
+                        与内部移动设备管理平台合作调研进行可行性研究，独立完成移动设备管理软件在应用设备上的可行性测试、回归测试，
+                        进行设备端应用（Android）以及IoT后端（Java，AWS）的代码开发、审查、测试以及原有内置设备管理功能代码的重构和设备端安全权限代码的更新，
+                        撰写技术文档以及运行手册，对预调配（Provision）合作商进行培训并提供SOP。
+                        项目落地后，设备预调配时间从每1个设备20分钟降至每100个设备5分钟，半年时间内，成功实现预调配超过3000设备，一年时间内，成功实现预调配超过8000设备，极大降低运营成本。
+                        实现业务代码和设备管理代码分离，增强系统可扩展性，降低应用冷启动延迟达25%。
                         <!-- TODO 读AWS IoT相关文章尤其是设备预调配、证书相关 -->
-                         <!-- TODO 总结SOP的变迁 -->
-                          <!-- TODO Hawk SDK -->
+                        <!-- TODO Hawk SDK -->
                     </li>
                     <!-- HCM -->
                     <li>
-                        作为混合会议管理系统项目（HCMS）的主力程序员，实现了即时会议信息通讯频道，增强了系统数据准确性。
-                        设计并实施了实时会议室接入频道，赋能会议室多媒体设备在混合办公中的应用。
-                        <!-- TODO Cisco要体现 -->
-                        通过构建室内设备互动通道，扩大下游客户与室内设备的交互权限，从而实现与整个思科会议室控制系统的交互。
-                        通过异步模式与预置并发优化客户端延迟，在P99层面实现了37%的提升。
+                        负责混合会议管理系统项目（HCMS）后端开发，设计并建立即时会议信息通讯IoT频道，增强系统数据准确性。
+                        设计并实现实时会议室接入IoT频道，赋能思科多媒体设备在混合办公中的应用。
+                        设计并构建会议室设备交互IoT频道，扩大下游客户与会议室设备的交互范围，通过后台安全权限配置管理，从而实现下游客户与思科会议室控制系统的定制化交互。
+                        通过异步模式与预置并发优化客户端延迟，在P99层面实现37%的提升。
                         <!-- HCM Metric&Canary -->
-                        设计并完成了HCMS服务监控体系，帮助下游客户实现平稳过渡以及版本更新可靠交付，引入实时金丝雀测试进入CI/CD流水线进一步强化系统流水线持续集成交付。
-                        成功交付商业指标系统，帮助产品组进行数据驱动型商业分析决策。
+                        主持设计、研讨并完成HCMS服务监控体系，引入实时金丝雀测试进入CI/CD流水线，强化系统流水线持续集成交付。利用运维指标，帮助下游客户实现版本更新可靠交付；
+                        利用商业指标，帮助产品组进行数据驱动型商业分析决策。
                     </li>
                     <!-- SL -->
                     <li>
-                        <!-- TODO 前端和new provision分开，分成两个column -->
-                        作为亚马逊会议平板主力工程师，提出并构建了安卓应用的报错模块，加强了用户体验以及可靠性。
-                        参与并设计了设备自动预调配流程，负责开发安全性金丝雀测试，确保了后端鲁棒性和韧性。
-                        与UX合作，领导并实现了亚马逊平板前端设计，以及模块化组件开发，完成了前端可访问性提升。
+                        负责亚马逊会议平板设备端以及前端开发，提出并构建了设备应用的全局异常处理以及报错模块，加强了用户体验以及可靠性。
+                        与UX合作，领导并通过React以及模块化组件开发实现前端设计，通过AWS CloudFront持续构建CDN内容分发，提升前端可访问性。
+                    </li>
+                    <li>
+                        参与亚马逊会议平板IoT设备即时证书注册系统，负责开发安全性金丝雀测试，确保后端鲁棒性和韧性。
                     </li>
                 </ul>
             </div>
@@ -77,37 +77,12 @@
             <div class="DetailContent">
                 <ul>
                     <li>
-                        出于安全考量，开发基于OAuth 2.0验证与授权系统的信号数据类包，通过AWS SNS进行数据传输。
-                        开发测试用例验证系统可靠性。在亚马逊三方登录和授权应用（Login with Amazon）中引用并且配置相应数据信号，收集并反馈给安全后台识别可疑活动，
-                        加强了风险识别和高危行为识别。
+                        开发基于OAuth2.0验证与授权系统信号的数据类包，在亚马逊三方登录和授权应用（Login with Amazon）中引用并收集数据信号，
+                        通过AWS SNS进行数据传输，反馈给安全后台进行可疑活动识别，加强风险和高危行为识别。
                     </li>
                 </ul>
             </div>
 
-            <!-- Internship -->
-            <!-- TODO Remove in the chinese resume if no space, also may be a concern for the background check -->
-            <!-- <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Beijing PipePlus Technology Co., Ltd.</h4>
-                <p style="display:inline" id="itemRight">Beijing, China 100089</p>
-            </div>
-            <div class="itemTitle">
-                <h4 class="DetailTitle" style="display:inline">Software Engineer Intern</h4>
-                <p style="display:inline" id="itemRight">07/2018 - 08/2018</p>
-            </div>
-
-            <div class="DetailContent">
-                <ul>
-                    <li>
-                        Applied the Matrikon OPC simulation server to generate
-                        randomized oilfield industrial data. Scripted tests for commercial database APIs,
-                        establishing a connection between the simulation server and the database to verify data accuracy
-                        during transportation. Encapsulated functionalities into a dependency package, achieved
-                        real-time reading, writing, and viewing of historical trends
-                        through APIs, optimized automation database management for oil
-                        and gas pipeline.
-                    </li>
-                </ul>
-            </div> -->
         </div>
 
     </div>
@@ -116,15 +91,15 @@
         <h3 class="ContentTitle">技能</h3>
         <div class="Detail">
             <div class="itemTitle">
-                <h4 class="DetailTitle">Programming Language</h4>
+                <h4 class="DetailTitle">编程语言</h4>
                 <ul>
                     <li>Java, C/C++, Python, HTML/CSS/JavaScript, TypeScript, SQL, Kotlin, Bash</li>
                 </ul>
             </div>
             <div class="itemTitle">
-                <h4 class="DetailTitle">Framework & DevOps Tools</h4>
+                <h4 class="DetailTitle">开发架构</h4>
                 <ul>
-                    <li>AWS, Android, MDM, IoT, Dagger, NodeJS, React, Express, JQuery, JUnit4, JUnit5, Mockito</li>
+                    <li>AWS, Android, MDM, IoT, Dagger, React, JUnit4, JUnit5, Mockito</li>
                 </ul>
             </div>
 
@@ -145,10 +120,7 @@
 
             <div class="DetailContent">
                 <ul>
-                    <!-- TODO 换成中文？ -->
-                    <li>课程: NLP, Object Oriented Design, Principles
-                        of Operating Systems, Android Programming, Introduction to Database, Social Media &
-                        Data Mining, Design & Analysis of Algorithm</li>
+                    <li>课程：安卓应用开发，操作系统原理，自然语言处理，社交媒体与数据挖掘</li>
                 </ul>
             </div>
         </div>
