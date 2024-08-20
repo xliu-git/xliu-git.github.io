@@ -12,6 +12,9 @@ body{
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     margin-bottom: 30px;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
 
 /* set all <a> with word (not picture) to the same style*/
@@ -24,9 +27,7 @@ body{
 }
 
 #MenuItem{
-    /* float and width are used to set MenuIten in center */
-    width: 20%;
-    float: left;
+    display: table-cell;
 }
 
 .individual{
